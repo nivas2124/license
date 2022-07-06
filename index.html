@@ -15,6 +15,13 @@
 
 
     <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
         .stl_ sup {
             vertical-align: baseline;
             position: relative;
@@ -534,7 +541,8 @@
 </head>
 
 <body>
-    <form id="form1">
+    <form id="form1" style="text-align:center; color:#0036cc;">
+
         <center>
 
             <legend>Postal License renewal for Tirupur</legend><br><br>
@@ -597,6 +605,17 @@
 
     </form>
 
+    <div id="doc" style="color:#cc0e00;">
+        <h6 style="font-size: 80%;"> கீழ் காணும் ஆவணங்களை அஞ்சல் அலுவலகத்துக்கு எடுத்து செல்லவும். </h6>
+        <h6 style="font-size: 80%;"> புதுப்பித்தல் விண்ணப்பம் - 2 Copy. </h6>
+        <h6 style="font-size: 80%;"> ஆதார் கார்டு - 2 Copy. </h6>
+        <h6 style="font-size: 80%;"> போஸ்டல் லைசென்ஸ் - 2 Copy. </h6>
+        <h6 style="font-size: 80%;"> வீட்டு வரி இரசீது - 2 Copy. </h6>
+        <a href="index.html" onclick="list()">
+            <h6 style="font-size: 80%;"> சேனல் லிஸ்ட் - 2 Copy.</h6>
+        </a>
+
+    </div>
 
 
 
@@ -845,7 +864,499 @@
                 document.getElementById("contact").innerHTML = document.getElementById("op_contact").value;
             }
         }
+
+        function list() {
+            var print_div = document.getElementById("tab");
+            var print_area = window.open();
+            print_area.document.write(print_div.innerHTML);
+            print_area.document.close();
+            print_area.focus();
+            print_area.print();
+            print_area.close();
+
+
+        }
     </script>
+
+    <div id="tab" style="display: none;position:relative;">
+
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+        <center><br><br>
+            <table style="font-size: 70%;width: 85%; text-align: center;">
+                <tr>
+                    <th colspan="7" style="text-align: center; font-size: 150%;">Basic Channel List</th>
+
+                </tr>
+                <tr>
+                    <td>SKY TV</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>SANGAMAM TV HD</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>DD BANGLA</td>
+                    <td>NA</td>
+                    <td>Bengali</td>
+                    <td>DD RAJYASABHA</td>
+                    <td>NA</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>IMAYAM TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                    <td>ASEERVATHAM</td>
+                    <td>Tamil</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>TV 5 MONDE</td>
+                    <td>Hindi</td>
+                    <td>News</td>
+                    <td>RUSSIA TODAY</td>
+                    <td>Hindi</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>MP TV</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>ANNAI TV</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>DD LOKSABHA</td>
+                    <td>NA</td>
+                    <td>News</td>
+                    <td>DD KISAN</td>
+                    <td>NA</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>MURASU TV</td>
+                    <td>Tamil</td>
+                    <td>Music</td>
+                    <td>ISAI ARUVI</td>
+                    <td>Tamil</td>
+                    <td>Music</td>
+                </tr>
+                <tr>
+                    <td>DW ASIA</td>
+                    <td>Hindi</td>
+                    <td>News</td>
+                    <td>ABP NEWS</td>
+                    <td>Hindi</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>TV9 TELUGU</td>
+                    <td>NA</td>
+                    <td>Telugu</td>
+                    <td>TV 5 NEWS</td>
+                    <td>NA</td>
+                    <td>Telugu</td>
+                </tr>
+                <tr>
+                    <td>DD NATIONAL</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>DD INDIA</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>KALAIGNAR TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                    <td>SIRIPOLI</td>
+                    <td>Tamil</td>
+                    <td>Comedy</td>
+                </tr>
+                <tr>
+                    <td>CINEMA TV</td>
+                    <td>Hindi</td>
+                    <td>Movies</td>
+                    <td>MANORANJAN TV</td>
+                    <td>Hindi</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>SUBHA VAARTHA</td>
+                    <td>NA</td>
+                    <td>Telugu</td>
+                    <td>SAKSHI TV</td>
+                    <td>Telugu</td>
+                    <td>Telugu</td>
+                </tr>
+                <tr>
+                    <td>DD BIHAR</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>DD BHARATI</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>SAHARA ONE</td>
+                    <td>Hindi</td>
+                    <td>Entertainment</td>
+                    <td>MAKKAL TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>CARE WORLD</td>
+                    <td>Hindi</td>
+                    <td>Entertainment</td>
+                    <td>FASHION TV</td>
+                    <td>English</td>
+                    <td>Lifestyle</td>
+                </tr>
+                <tr>
+                    <td>ABN ANDHRA JYOTI</td>
+                    <td>Telugu</td>
+                    <td>Telugu</td>
+                    <td>PEACE OF MIND</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>DD UTTARPRADESH</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>DD MADHYAPRADESH</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>KAIRALI TV</td>
+                    <td>Malayalam</td>
+                    <td>Malayalam</td>
+                    <td>KAIRALI PEOPLE</td>
+                    <td>Malayalam</td>
+                    <td>Malayalam</td>
+                </tr>
+                <tr>
+                    <td>GOODNESS</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                    <td>DIVYA</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>SATHIYAM TV</td>
+                    <td>Tamil</td>
+                    <td>News</td>
+                    <td>TAMILAN TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>POLIMER NEWS</td>
+                    <td>Tamil</td>
+                    <td>News</td>
+                    <td>SAHANA</td>
+                    <td>Tamil</td>
+                    <td>Music</td>
+                </tr>
+                <tr>
+                    <td>ARIHANT TV</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                    <td>ARADANA TV</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>SRI SANKARA</td>
+                    <td>Tamil</td>
+                    <td>Religious</td>
+                    <td>SALVATION</td>
+                    <td>NA</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>DD POTHIGAI</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>DD URDU</td>
+                    <td>NA</td>
+                    <td>Urdu</td>
+                </tr>
+                <tr>
+                    <td>AASTHA BHAJAN</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                    <td>NEPAL 1</td>
+                    <td>Others</td>
+                    <td>Other</td>
+                </tr>
+                <tr>
+                    <td>MADHA TV</td>
+                    <td>Tamil</td>
+                    <td>Religious</td>
+                    <td>ARPUTHAR YESU</td>
+                    <td>NA</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>DD YADAGIRI</td>
+                    <td>NA</td>
+                    <td>Telugu</td>
+                    <td>DD SAPTAGIRI</td>
+                    <td>NA</td>
+                    <td>Telugu</td>
+                </tr>
+                <tr>
+                    <td>316 TV</td>
+                    <td>NA</td>
+                    <td>Religious</td>
+                    <td>THANTHI TV</td>
+                    <td>Tamil</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>GYANDHARSHAN 2</td>
+                    <td>NA</td>
+                    <td>Other</td>
+                    <td>GYANDHARSHAN 1</td>
+                    <td>NA</td>
+                    <td>Other</td>
+                </tr>
+                <tr>
+                    <td>MAZHAVIL MANORAMA HD</td>
+                    <td>Malayalam</td>
+                    <td>Malayalam</td>
+                    <td>9X JHAKAAS</td>
+                    <td>Bengali</td>
+                    <td>Bengali</td>
+                </tr>
+                <tr>
+                    <td>7S MUSIC</td>
+                    <td>Tamil</td>
+                    <td>Music</td>
+                    <td>MAZHAVIL MANORAMA</td>
+                    <td>Malayalam</td>
+                    <td>Malayalam</td>
+                </tr>
+                <tr>
+                    <td>DD GIRNAR</td>
+                    <td>NA</td>
+                    <td>Other</td>
+                    <td>WIN TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>9XO</td>
+                    <td>English</td>
+                    <td>Music</td>
+                    <td>DD ODIA</td>
+                    <td>NA</td>
+                    <td>Oriya</td>
+                </tr>
+                <tr>
+                    <td>MANORAMA NEWS</td>
+                    <td>Malayalam</td>
+                    <td>Malayalam</td>
+                    <td>B4U MUSIC</td>
+                    <td>Hindi</td>
+                    <td>Music</td>
+                </tr>
+                <tr>
+                    <td>SUPER TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                    <td>KAUMUDY</td>
+                    <td>Malayalam</td>
+                    <td>Malayalam</td>
+                </tr>
+                <tr>
+                    <td>DD MALAYALAM</td>
+                    <td>NA</td>
+                    <td>Malayalam</td>
+                    <td>SR TV</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>CAPTAIN NEWS</td>
+                    <td>Tamil</td>
+                    <td>News</td>
+                    <td>FILMY</td>
+                    <td>Hindi</td>
+                    <td>Movies</td>
+                </tr>
+                <tr>
+                    <td>DD CHANDANA</td>
+                    <td>NA</td>
+                    <td>Kannada</td>
+                    <td>ENTERR 10</td>
+                    <td>Hindi</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>CAPTAIN TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                    <td>N TV</td>
+                    <td>NA</td>
+                    <td>Telugu</td>
+                </tr>
+                <tr>
+                    <td>SANGEET BHOJPURI</td>
+                    <td>Bengali</td>
+                    <td>Bhojpuri</td>
+                    <td>DD SPORTS</td>
+                    <td>NA</td>
+                    <td>Sports</td>
+                </tr>
+                <tr>
+                    <td>SANGAMAM TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                    <td>KAIRALI WE</td>
+                    <td>Malayalam</td>
+                    <td>Malayalam</td>
+                </tr>
+                <tr>
+                    <td>DD News</td>
+                    <td>NA</td>
+                    <td>News</td>
+                    <td>PARAS TV</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>SEITHIGAL</td>
+                    <td>Tamil</td>
+                    <td>News</td>
+                    <td>SANSKAR</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>FRANCE TV 24</td>
+                    <td>Hindi</td>
+                    <td>News</td>
+                    <td>PUTHIYA THALAIMURAI</td>
+                    <td>Tamil</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>VANITHA TV</td>
+                    <td>Telugu</td>
+                    <td>Telugu</td>
+                    <td>BHAKTHI TV</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>DD RAJASTHAN</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>VASANTH TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>CHITHIRAM</td>
+                    <td>Tamil</td>
+                    <td>Kids</td>
+                    <td>POLIMER TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <td>WOW CINEMA</td>
+                    <td>Hindi</td>
+                    <td>Movies</td>
+                    <td>AASTHA TV</td>
+                    <td>Others</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>TV 1</td>
+                    <td>NA</td>
+                    <td>Telugu</td>
+                    <td>NAMBIKAI TV</td>
+                    <td>Tamil</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>DD HD</td>
+                    <td>NA</td>
+                    <td>Entertainment</td>
+                    <td>DD KASHIR</td>
+                    <td>NA</td>
+                    <td>Urdu</td>
+                </tr>
+                <tr>
+                    <td>9X JALWA</td>
+                    <td>Hindi</td>
+                    <td>Music</td>
+                    <td>ANGEL TV</td>
+                    <td>Tamil</td>
+                    <td>Religious</td>
+                </tr>
+                <tr>
+                    <td>MATHRUBHUMI</td>
+                    <td>NA</td>
+                    <td>Malayalam</td>
+                    <td>DD PUNJABI</td>
+                    <td>NA</td>
+                    <td>Punjabi</td>
+                </tr>
+                <tr>
+                    <td>VELICHAM TV</td>
+                    <td>Tamil</td>
+                    <td>Entertainment</td>
+                    <td>DY 365</td>
+                    <td>Marathi</td>
+                    <td>Marathi</td>
+                </tr>
+                <tr>
+                    <td>DD SAHYADRI</td>
+                    <td>NA</td>
+                    <td>Marathi</td>
+                    <td>NEWS 7 TAMIL</td>
+                    <td>Tamil</td>
+                    <td>News</td>
+                </tr>
+                <tr>
+                    <td>B4U MOVIES</td>
+                    <td>Hindi</td>
+                    <td>Entertainment</td>
+                    <td>DD NORTH EAST</td>
+                    <td>NA</td>
+                    <td>Other</td>
+                </tr>
+
+
+
+
+            </table>
+        </center>
+
+    </div>
+
+
+
+
+
+
+
 
 </body>
 
